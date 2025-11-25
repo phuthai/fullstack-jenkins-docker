@@ -1,6 +1,6 @@
 services:
   mysql:
-    image: mariadb:lasted
+    image: mariadb:latest
     container_name: attractions_mysql
     restart: unless-stopped
     environment:
