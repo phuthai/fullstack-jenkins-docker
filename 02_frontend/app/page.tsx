@@ -27,7 +27,7 @@ export default async function Page() {
   return (
     <main className="container">
       <header className="header">
-        <h1 className="title">Attractions_2</h1>
+        <h1 className="title">แหล่งน่าเที่ยวใกล้ฉัน</h1>
         <p className="subtitle">Discover points of interest nearby</p>
       </header>
 
