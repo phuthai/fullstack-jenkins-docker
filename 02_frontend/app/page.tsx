@@ -27,8 +27,8 @@ export default async function Page() {
   return (
     <main className="container">
       <header className="header">
-        <h1 className="title">แหล่งน่าเที่ยวใกล้ฉัน</h1>
-        <p className="subtitle">Discover points of interest nearby</p>
+        <h1 className="title">แหล่งน่าเที่ยวน่าสนใจ</h1>
+        <p className="subtitle">Discover points of interest</p>
       </header>
 
       {!rows || rows.length === 0 ? (
