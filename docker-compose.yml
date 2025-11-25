@@ -15,19 +15,6 @@ services:
       - mysql_data:/var/lib/mysql
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql:ro
     networks: [ stack ]
-
-  phpmyadmin:
-    image: phpmyadmin/phpmyadmin:latest
-    restart: unless-stopped
-    environment:
-      PMA_HOST: mysql
-      PMA_PORT: 3306
-      UPLOAD_LIMIT: 256M
-    ports:
-      - "${PHPMYADMIN_PORT:-8888}:80"
-    depends_on: [ mysql ]
-    networks: [ stack ]
-
   api:
     build: ./01_api
     restart: unless-stopped
